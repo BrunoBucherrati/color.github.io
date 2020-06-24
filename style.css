@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body, main{
+    height: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+button{
+    margin: 5px;
+    height: 50px;
+    width: 100%;
+    padding: 15px 25px;
+    cursor: auto;
+    background: white;
+    border: none;
+    color: black;
+    border-radius: 100px;
+    text-shadow: 1px 1px 1px 1px rgba(179, 179, 179, 0.7);
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(179, 179, 179, 0.7);
+    outline: none;
+    user-select: none;
+}
+
+button:active{
+    transform: translate(1px 1px);
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.404)
+}

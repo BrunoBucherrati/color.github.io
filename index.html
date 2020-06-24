@@ -1,0 +1,64 @@
+<html></html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <button class="gold">G.Skill TridentZ Royal</button>
+        <button class="blue">Дешевый грустный дождь</button>
+        <button class="red">Окровавленные очи</button>
+        <button class="yellow">Сотовая пчелка</button>
+        <button class="night">Темный вечер</button>
+        <button class="img">Цвет подсветки школьника</button>
+        <button class="random">Рандомный цвет</button>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+     <script>
+         $(document).ready(function() {
+
+            $('.gold').click(function() {
+                $('body').css('background', 'gold');
+            })
+            
+            $('.blue').click(function() {
+                $('body').css('background', 'SteelBlue');
+            })
+            
+            $('.red').click(function() {
+                $('body').css('background', 'red');
+            })
+            
+            $('.yellow').click(function() {
+                $('body').css('background', 'yellow');
+            })
+            
+            $('.night').click(function() {
+                $('body').css('background', 'MidnightBlue');
+            })
+
+            $('.img').click(function() {
+                $('body').css({'background' : 'url(1.jpg)',
+                                     'background-size' : 'cover'});
+            })
+
+            $('.random').click(function() {
+
+                var randomColor='rgb(' + (Math.floor(Math.random() * 255)) + ',' +
+                                         (Math.floor(Math.random() * 255)) + ',' +
+                                         (Math.floor(Math.random() * 255)) + ')';
+
+                $('body').css('background', randomColor);
+            })
+
+
+
+         })
+     </script>
+</body>
+</html>
